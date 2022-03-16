@@ -2,9 +2,24 @@
   /* visibility: hidden; */
   font-size: 14px;
 }
-.carousel-item {
+.container1 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(./Image/hero3.jpg);
   background-position: center;
   background-size: cover;
+  height: 100vh;
+}
+.container2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./Image/hero3.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.container3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./Image/hero3.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
