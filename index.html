@@ -15,14 +15,19 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>NASIMS</title>
   </head>
   <body class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    
+    <!-- start of navbar code -->
+    
+    <nav
+      class="navbar navbar-default navbar-fixed-top button navbar-expand-lg navbar-light bg-white"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
-          >Federal Ministry of Humanitarian Affairs, <br />
-          Disaster Management and Social Development</a
+          ><span class="nav-brand">Federal Ministry of Humanitarian Affairs, <br />
+          Disaster Management and Social Development</span></a
         >
         <button
           class="navbar-toggler"
@@ -35,49 +40,70 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav text-center">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav text-center text-lg-right">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="#">News</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="about-page.html">About</a>
+            <a class="nav-link" href="news-page.html">News</a>
+            <a class="nav-link" href="contact.html">Contact</a>
             <a class="btn btn-success btn-lg" href="#">Login</a>
           </div>
-        </div>
       </div>
     </nav>
 
+    <!-- end of navbar code -->
+
+    <!-- start of carousel 1 (Home page) for small screen -->
+
     <div
       id="carouselExampleControls"
-      class="carousel slide"
+      class="carousel slide d-md-none"
       data-bs-ride="carousel"
     >
       <div class="carousel-inner text-center text-light mt-3">
         <div class="carousel-item active">
           <div class="container1 p-5">
-            <img src="./Image/logoses.png" class="img-fluid" alt="..." />
+            <img
+              src="./Image/logo.png"
+              style="height: 150px"
+              class="img-fluid"
+              alt="..."
+            />
             <h4><u>Please note</u></h4>
             <h1>Registration for N-Power Batch C is now Closed!</h1>
             <p>
               The central management system for the Federal Ministry of
               Humanitarian Affairs, Disaster Management and Social Development.
             </p>
+            <a class="text-decoration-none text-success" href="#">Read More</a>
           </div>
         </div>
+
         <div class="carousel-item">
           <div class="container2 p-5">
-            <img src="./Image/logoses.png" class="img-fluid" alt="..." />
+            <img
+              src="./Image/logo.png"
+              style="height: 150px"
+              class="img-fluid"
+              alt="..."
+            />
             <h4><u>Read about</u></h4>
             <h1>How NASIMS is impacting lives on a global level.</h1>
             <p>
               The N-Power Programme is a job creation and skills empowerment
               programme of the Federal Government of Nigeria…
             </p>
+            <a class="text-decoration-none text-success" href="#">Read More</a>
           </div>
         </div>
         <div class="carousel-item">
           <div class="container3 p-5">
-            <img src="./Image/logoses.png" class="img-fluid" alt="..." />
+            <img
+              src="./Image/logo.png"
+              style="height: 150px"
+              class="img-fluid"
+              alt="..."
+            />
             <h4><u>Welcome to the</u></h4>
             <h1>
               National Social Investment Management System (NASIMS) Portal.
@@ -89,6 +115,7 @@
               Ministry of Humanitarian Affairs, Disaster Management and Social
               Development.
             </p>
+            <a class="text-decoration-none text-success" href="#">Read More</a>
           </div>
         </div>
       </div>
@@ -110,10 +137,133 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+      <div class="text-light bg-dark text-center">
+        Read more about our response to the Covid-19 pandemic
+        <a class="text-decoration-none text-success" href="#">here</a>
+      </div>
     </div>
 
-    <div>
-      <div class="container4 text-center">
+    <!-- end of carousel 1 (Home page) for small screen -->
+
+    <!-- start of carousel 1 (Home page) for medium and large screens -->
+    
+    <div
+      id="carouselExampleControls"
+      class="carousel slide d-none d-lg-block"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner text-center mt-3">
+        <div class="carousel-item active">
+          <div class="d-none d-lg-flex">
+            <div class="container1-lg p-5">
+              <img
+                src="./Image/logo.png"
+                style="height: 150px"
+                class="img-fluid"
+                alt="..."
+              />
+              <h4><u>Please note</u></h4>
+              <h1>Registration for N-Power Batch C is now Closed!</h1>
+              <p>
+                The central management system for the Federal Ministry of
+                Humanitarian Affairs, Disaster Management and Social
+                Development.
+              </p>
+              <a class="text-decoration-none text-success" href="#"
+                >Read More</a
+              >
+            </div>
+
+            <div>
+              <img class="d-none d-lg-block" src="./Image/image3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="d-none d-lg-flex">
+            <div class="container2-lg p-5">
+              <img
+                src="./Image/logo.png"
+                style="height: 150px"
+                class="img-fluid"
+                alt="..."
+              />
+              <h4><u>Read about</u></h4>
+              <h1>How NASIMS is impacting lives on a global level.</h1>
+              <p>
+                The N-Power Programme is a job creation and skills empowerment
+                programme of the Federal Government of Nigeria…
+              </p>
+              <a class="text-decoration-none text-success" href="#"
+                >Read More</a
+              >
+            </div>
+
+            <div>
+              <img class="d-none d-lg-block" src="./Image/image2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-none d-lg-flex">
+            <div class="container3-lg p-5">
+              <img
+                src="./Image/logo.png"
+                style="height: 150px"
+                class="img-fluid"
+                alt="..."
+              />
+              <h4><u>Welcome to the</u></h4>
+              <h1>
+                National Social Investment Management System (NASIMS) Portal.
+              </h1>
+              <p>
+                The National Social Investment Management System (NASIMS) is the
+                central management platform for the administration and
+                coordination of Social Investment Programmes under the Federal
+                Ministry of Humanitarian Affairs, Disaster Management and Social
+                Development.
+              </p>
+              <a class="text-decoration-none text-success" href="#"
+                >Read More</a
+              >
+            </div>
+
+            <div>
+              <img class="d-none d-lg-block" src="./Image/hero3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="text-light bg-dark text-center">
+        Read more about our response to the Covid-19 pandemic
+        <a class="text-decoration-none text-success" href="#">here</a>
+      </div>
+    </div>
+
+    <!-- end of carousel 1 (Home page) for medium and large screens -->
+
+    
+      <div class="container4 text-center d-lg-none">
         <img src="./Image/pres.jpg" class="img-fluid p-5" alt="" />
 
         <h1>
@@ -134,7 +284,34 @@
         <p>Sadiya Umar Farouq</p>
         <p>Honorable Minister</p>
       </div>
+  
+
+    <div class="d-none d-lg-block">
+      <div class="row">
+    <div class="container4 text-center col-lg-6">
+      <img src="./Image/pres.jpg" class="" alt="" />
     </div>
+      <div class="col-lg-6">
+      <h1>
+        Welcome to the National Social Investment Management System (NASIMS)
+      </h1>
+      <p>
+        The Federal Ministry of Humanitarian Affairs, Disaster Management and
+        Social Development was established on Wednesday August 21st, 2019 by
+        an Executive pronouncement by the President and Commander in Chief of
+        the Armed Forces of Nigeria, H.E., Muhammadu Buhari GCFR at the
+        inauguration of Ministers for the Federal Republic of Nigeria. Under
+        My leadership as Minister, the Ministry will position itself in light
+        of the prevailing Humanitarian situation in the country through its
+        Vision, Mission and Core values to promote Human dignity and
+        Integration of basic Humane benevolence and compassion in the
+        treatment of all Nigerians
+      </p>
+      <p>Sadiya Umar Farouq</p>
+      <p>Honorable Minister</p>
+    </div>
+  </div>
+  </div>
 
     <div class="container5 text-center">
       <img src="./Image/about.jpg" alt="" class="img-fluid p-5" />
@@ -156,10 +333,370 @@
       <a href="#"><button class="btn btn-lg btn-success">Read more</button></a>
     </div>
 
+    <div class="text-center mb- mt-5 bg-info pb-5">
+      <h1 class="pt-5">Our Programmes</h1>
+      <p class="mb-4">
+        Our programmes are specifically designed to empower, train and uplift
+        millions of abandoned Nigerians in every part of the country.
+      </p>
+
+
+<!-- start of carousel 2 (Home page) for small screen -->
+
+      <div
+        id="carouselExampleControls m-5"
+        class="carousel slide d-md-none"
+        data-bs-ride="carousel"
+      >
+
+        <div class="carousel-inner text-center text-dark mt-3">
+          <div class="carousel-item active bg-danger">
+            <div class="card">
+              <img src="./Image/slider2.jpg" class="card-img-top" height="300px" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Government Enterprise and Empowerment Program (GEEP)
+                </h5>
+                <p class="card-text">
+                  The Government Enterprise and Empowerment Program was
+                  established to provide financial support and training to
+                  businesses and entrepreneurs at the bottom of the financial
+                  pyramid.
+                </p>
+              </div>
+              <div class="card-body style">
+                <a href="#" class="card-link text-decoration-none"><button class="text-white bg-success">Apply Now</button></a>
+                <a href="#" class="card-link text-decoration-none"><button class="text-white bg-success">Learn More</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: fit-content content-fluid">
+              <img src="./Image/slider1.jpg" class="card-img-top" height="300px" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  National Home Grown School Feeding Program (NHGSFP)
+                </h5>
+                <p class="card-text">
+                  The National Home Grown School Feeding Program was created to
+                  provide a nutritious and balanced meal to 5.5 million school
+                  children grades 1 to 3.
+                </p>
+                <div class="card-body">
+                  <a href="#" class="card-link text-decoration-none"><button class="text-white bg-success">Apply Now</button></a>
+                  <a href="#" class="card-link text-decoration-none"><button class="text-white bg-success">Learn More</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item bg-info">
+            <div class="card">
+              <img src="./Image/slider3.jpg" class="card-img-top" height="300px" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">N-POWER</h5>
+                <p class="card-text">
+                  The N-Power Program is built to address the issue of youth
+                  unemployment and help increase social development.
+                </p>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-link text-decoration-none"><button class="text-white bg-success">Apply Now</button></a>
+                <a href="#" class="card-link text-decoration-none"><button class="text-white bg-success">Learn More</button></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card" style= "width: fit-content content-fluid">
+              <img src="./Image/electri.jpg" class="card-img-top" height="300px" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Conditional Cash Transfer (CCT)</h5>
+                <p class="card-text">
+                  Nigeria's Conditional Cash Transfer program provides targeted
+                  cash transfers to the most vulnerable households with the
+                  long-term goal of lifting millions out of poverty.
+                </p>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-link text-decoration-none"><button class="text-white bg-success">Apply Now</button></a>
+                <a href="#" class="card-link text-decoration-none"><button class="text-white bg-success">Learn More</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- end of carousel 2 (Home page) for small screen -->
+
+
+<!-- start of carousel 2 (Home page) for medium and large screens -->
+
+    <div id="carouselExampleControls" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            
+        <div class="row">
+          <div class="card col-lg-6 p-3">
+            <img src="./Image/slider2.jpg" class="card-img-top" height="300px" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">
+                Government Enterprise and Empowerment Program (GEEP)
+              </h5>
+              <p class="card-text">
+                The Government Enterprise and Empowerment Program was
+                established to provide financial support and training to
+                businesses and entrepreneurs at the bottom of the financial
+                pyramid.
+              </p>
+            </div>
+            <div class="card-body style">
+              <a href="#" class="card-link text-decoration-none"><button class="text-white bg-success">Apply Now</button></a>
+              <a href="#" class="card-link text-decoration-none"><button class="text-white bg-success">Learn More</button></a>
+            </div>
+          </div>
+
+          <div class="card col-lg-6 p-3">
+            <img src="./Image/slider1.jpg" class="card-img-top" height="300px" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">
+                National Home Grown School Feeding Program (NHGSFP)
+              </h5>
+              <p class="card-text">
+                The National Home Grown School Feeding Program was created to
+                provide a nutritious and balanced meal to 5.5 million school
+                children grades 1 to 3.
+              </p>
+              <div class="card-body">
+                <a href="#" class="card-link text-decoration-none"><button class="text-white bg-success">Apply Now</button></a>
+                <a href="#" class="card-link text-decoration-none"><button class="text-white bg-success">Learn More</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="carousel-item">
+        <div class="row">
+        <div class="card col-lg-6 p-3">
+          <img src="./Image/slider3.jpg" class="card-img-top" height="300px" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">N-POWER</h5>
+            <p class="card-text">
+              The N-Power Program is built to address the issue of youth
+              unemployment and help increase social development.
+            </p>
+          </div>
+          <div class="card-body">
+            <a href="#" class="card-link text-decoration-none"><button class="text-white bg-success">Apply Now</button></a>
+            <a href="#" class="card-link text-decoration-none"><button class="text-white bg-success">Learn More</button></a>
+          </div>
+        </div>
+
+        <div class="card col-lg-6 p-3">
+          <img src="./Image/electri.jpg" class="card-img-top" height="300px" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Conditional Cash Transfer (CCT)</h5>
+            <p class="card-text">
+              Nigeria's Conditional Cash Transfer program provides targeted
+              cash transfers to the most vulnerable households with the
+              long-term goal of lifting millions out of poverty.
+            </p>
+          </div>
+          <div class="card-body">
+            <a href="#" class="card-link text-decoration-none"><button class="text-white bg-success">Apply Now</button></a>
+            <a href="#" class="card-link text-decoration-none"><button class="text-white bg-success">Learn More</button></a>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- end of carousel 2 (Home page) for medium and large screens -->
+
+
+
+
+    <div class="d-md-none d-lg-none text-center">
+    <div class="m-5 text-center">
+    <h4>Latest News</h4>
+    <p>Keep up with the latest updates about programmes and events</p>
+
+    <div class="card" style="width: 18rem">
+      <img src="./Image/engineer.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">N-Power Batch C</h5>
+        <p class="card-text">
+          <u>June 25,</u> 2020 <br />
+          All empower batch c applicants are expected to update their profile
+          and take test for possible shortlisting...
+        </p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem">
+      <img src="./Image/call2.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">N-Power Customer Care</h5>
+        <p class="card-text">
+          <u>June 25,</u> 2020 <br />
+          All enquires and complains should be channeled through the N-Power
+          customer care line. Details are as follows:
+        </p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem">
+      <img src="./Image/ict.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">NASIMS Test Portal</h5>
+        <p class="card-text">
+          <u>June 25,</u> 2020
+          <br />
+          Please make sure your records are fully updated on the NASIMS portal
+          before taking this test...
+        </p>
+      </div>
+    </div>
+
+    <a href="#" class="btn btn-success">News Page</a>
+  </div>
+  </div>
+
+
+<!-- 
+    <div class="d-none d-md-block d-lg-block"> -->
+
+    
+    <h4 class="text-center">Latest News</h4>
+    <p class="text-center">Keep up with the latest updates about programmes and events</p>
+    <div class="m-5 text-center d-lg-flex justify-content-evenly">
+    <div class="card" style="width: 18rem">
+      <img src="./Image/engineer.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">N-Power Batch C</h5>
+        <p class="card-text">
+          <u>June 25,</u> 2020 <br />
+          All empower batch c applicants are expected to update their profile
+          and take test for possible shortlisting...
+        </p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem">
+      <img src="./Image/call2.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">N-Power Customer Care</h5>
+        <p class="card-text">
+          <u>June 25,</u> 2020 <br />
+          All enquires and complains should be channeled through the N-Power
+          customer care line. Details are as follows:
+        </p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem">
+      <img src="./Image/ict.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">NASIMS Test Portal</h5>
+        <p class="card-text">
+          <u>June 25,</u> 2020
+          <br />
+          Please make sure your records are fully updated on the NASIMS portal
+          before taking this test...
+        </p>
+      </div>
+    </div>
+    </div>
+<div>
+    <a href="#" class="btn btn-success">News Page</a>
+  </div>
+</div>
+
+
+    <div class="bg-dark text-light p-5 text-center">
+      <p>Be the first to know</h3>
+      <h2 class="lead">
+        Follow us on our social media platforms for all the latest updates and
+        applications news
+      </h2>
+
+      <div class="" style="word-spacing: 10px;">
+        <img src="./Icons/3709569_facebook_facebook icon_social media_icon.png" height="15px" alt="">
+  
+        <img src="./Icons/4070150_tweet_twitter_twitter icon_icon.png" height="15px" alt="">
+   
+        <img src="./Icons/3709561_ig_instagram_instagram icon_social media_icon.png" height="15px" alt="">
+       </div>
+
+    </div>
+
+    <div class="bg-white text-center m-5">
+      <h4>Got Questions?</h4>
+        
+      <p>
+        For enquiries, complaints or requests, feel free to reach out to us.
+      </p>
+        
+      <a href="#"><button class="btn btn-lg btn-success mt-1">Contact Us</button></a>
+    </div>
+
+    <div class="bg-success text-light p-5 text-center">
+     <div class="" style="word-spacing: 10px;">
+      <a class="text-decoration-none text-light" href="#">Apply</a>
+      <a class="text-decoration-none text-light" href="#">About</a>
+      <a class="text-decoration-none text-light" href="#">News</a>
+      <a class="text-decoration-none text-light" href="#">Contact</a>
+     </div>
+
+     <div class="" style="word-spacing: 10px;">
+      <img src="./Icons/3709569_facebook_facebook icon_social media_icon.png" height="15px" alt="">
+
+      <img src="./Icons/4070150_tweet_twitter_twitter icon_icon.png" height="15px" alt="">
+ 
+      <img src="./Icons/3709561_ig_instagram_instagram icon_social media_icon.png" height="15px" alt="">
+     </div>
+     
+      
+      <p>
+        Copyright 2022. Federal Ministry of Humanitarian Affairs, Disaster
+        Management and Social Development. All Rights Reserved.
+      </p>
+    </div>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
   </body>
 </html>

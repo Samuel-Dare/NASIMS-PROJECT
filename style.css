@@ -4,14 +4,14 @@
 }
 .container1 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./Image/hero3.jpg);
+    url(./Image/image3.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh;
 }
 .container2 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./Image/hero3.jpg);
+    url(./Image/image2.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -22,4 +22,25 @@
   background-position: center;
   background-size: cover;
   height: 100vh;
+}
+
+@media (max-width: 767px) {
+  .nav-brand {
+    visibility: hidden;
+  }
+}
+
+/* Styling for About Page */
+.about-nasims {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./Image/about1.jpg);
+  background-position: left;
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .investment-text {
+    justify-content: space-between;
+  }
 }
