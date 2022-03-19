@@ -1,3 +1,10 @@
+body {
+  font-family: "Work Sans";
+  letter-spacing: 0;
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(33, 37, 41, 1);
+}
 .navbar .navbar-brand {
   /* visibility: hidden; */
   font-size: 14px;
@@ -52,4 +59,11 @@
     justify-content: space-between;
     margin-right: 9rem;
   }
+}
+
+.contact-us-container {
+  background-color: linear-gradient(
+    rgba(249, 236, 220, 0.9),
+    rgba(249, 236, 220, 0.9)
+  );
 }
