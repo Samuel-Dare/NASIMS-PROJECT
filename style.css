@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
 body {
   font-family: "Work Sans";
   letter-spacing: 0;
@@ -5,6 +14,7 @@ body {
   font-weight: 400;
   color: rgba(33, 37, 41, 1);
 }
+
 .navbar .navbar-brand {
   /* visibility: hidden; */
   font-size: 14px;
@@ -37,7 +47,6 @@ body {
   }
 }
 
-/* Styling for About Page */
 .about-nasims {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(./Image/about1.jpg);
@@ -62,8 +71,23 @@ body {
 }
 
 .contact-us-container {
-  background-color: linear-gradient(
-    rgba(249, 236, 220, 0.9),
-    rgba(249, 236, 220, 0.9)
-  );
+  position: relative;
+}
+
+.contact-us-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.recent-news-container {
+  position: relative;
+}
+
+.recent-news-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
